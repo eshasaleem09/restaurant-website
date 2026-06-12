@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spice & Flame Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#" class="logo">🔥 Spice & Flame</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Est. 2024 · Lahore, Pakistan</p>
+      <h1>Where Every Bite<br /><span>Tells a Story</span></h1>
+      <p class="hero-sub">Authentic flavors, crafted with passion. Experience dining like never before.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">View Our Menu</a>
+        <a href="#contact" class="btn-outline">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu">
+    <div class="section-inner">
+      <p class="section-tag">What We Serve</p>
+      <h2 class="section-title">Our Signature Menu</h2>
+      <p class="section-sub">Fresh ingredients, bold spices, unforgettable taste.</p>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="mains">Main Course</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="fastfood">Fast Food</button>
+      </div>
+
+      <!-- Menu Cards -->
+      <div class="menu-grid">
+
+        <!-- STARTERS -->
+        <div class="menu-card" data-category="starters">
+          <div class="menu-card-img">🥗</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Crispy Chaat</h3>
+              <span class="price">Rs. 350</span>
+            </div>
+            <p>Tangy, crunchy, and loaded with fresh toppings.</p>
+            <span class="tag">Starter</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="starters">
+          <div class="menu-card-img">🍢</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Seekh Kabab</h3>
+              <span class="price">Rs. 550</span>
+            </div>
+            <p>Juicy minced beef kababs with mint chutney.</p>
+            <span class="tag">Starter</span>
+          </div>
+        </div>
+
+        <!-- MAIN COURSE -->
+        <div class="menu-card" data-category="mains">
+          <div class="menu-card-img">🍛</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Chicken Karahi</h3>
+              <span class="price">Rs. 1200</span>
+            </div>
+            <p>Classic Pakistani karahi cooked in iron wok.</p>
+            <span class="tag">Main Course</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="mains">
+          <div class="menu-card-img">🥩</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Mutton Biryani</h3>
+              <span class="price">Rs. 950</span>
+            </div>
+            <p>Slow-cooked basmati rice with tender mutton.</p>
+            <span class="tag">Main Course</span>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-card-img">🥤</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Mango Lassi</h3>
+              <span class="price">Rs. 250</span>
+            </div>
+            <p>Chilled, creamy mango yogurt drink.</p>
+            <span class="tag">Drink</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-card-img">☕</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Kashmiri Chai</h3>
+              <span class="price">Rs. 200</span>
+            </div>
+            <p>Pink tea with cardamom, almonds and cream.</p>
+            <span class="tag">Drink</span>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-card-img">🍮</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Gulab Jamun</h3>
+              <span class="price">Rs. 180</span>
+            </div>
+            <p>Soft milk dumplings soaked in rose syrup.</p>
+            <span class="tag">Dessert</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-card-img">🍨</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Kulfi Falooda</h3>
+              <span class="price">Rs. 280</span>
+            </div>
+            <p>Creamy kulfi with vermicelli and rose water.</p>
+            <span class="tag">Dessert</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-card-img">🍰</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Chocolate Lava Cake</h3>
+              <span class="price">Rs. 450</span>
+            </div>
+            <p>Warm cake with melted chocolate center.</p>
+            <span class="tag">Dessert</span>
+          </div>
+        </div>
+
+        <!-- FAST FOOD -->
+        <div class="menu-card" data-category="fastfood">
+          <div class="menu-card-img">🍔</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Desi Smash Burger</h3>
+              <span class="price">Rs. 650</span>
+            </div>
+            <p>Double smash patty with spicy chutney sauce.</p>
+            <span class="tag">Fast Food</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="fastfood">
+          <div class="menu-card-img">🍕</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>BBQ Pizza</h3>
+              <span class="price">Rs. 850</span>
+            </div>
+            <p>Loaded with chicken tikka and BBQ sauce.</p>
+            <span class="tag">Fast Food</span>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="fastfood">
+          <div class="menu-card-img">🌯</div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Zinger Wrap</h3>
+              <span class="price">Rs. 480</span>
+            </div>
+            <p>Crispy chicken strip with coleslaw in a soft wrap.</p>
+            <span class="tag">Fast Food</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="section-inner about-grid">
+
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">Cooked With Love<br />Since Day One</h2>
+        <p>Spice & Flame was born from a simple dream — to bring authentic home-style cooking to every table. Our chefs use recipes passed down through generations, combined with modern presentation.</p>
+        <p>We believe food is more than nutrition. It is memory, culture, and connection.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Happy Guests Daily</span>
+          </div>
+          <div class="stat">
+            <strong>30+</strong>
+            <span>Menu Items</span>
+          </div>
+          <div class="stat">
+            <strong>5★</strong>
+            <span>Average Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-card">
+          <p class="quote">"The best restaurants don't just feed you — they make you feel at home."</p>
+          <p class="quote-author">— Chef Adnan, Founder</p>
+        </div>
+        <div class="about-badges">
+          <div class="badge">🏆 Best Karahi 2024</div>
+          <div class="badge">⭐ Top Rated Lahore</div>
+          <div class="badge">🌿 Fresh Daily</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-tag">Find Us</p>
+      <h2 class="section-title">Reserve Your Table</h2>
+      <p class="section-sub">Walk in or book ahead — we're always ready for you.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>Main Boulevard, Gulberg III, Lahore</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon – Sun: 12:00 PM – 12:00 AM</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p>+92 300 1234567</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p>hello@spiceandflame.pk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div id="formSuccess" class="form-success">
+            ✅ Reservation request sent! We'll confirm shortly.
+          </div>
+          <div id="formFields">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" placeholder="e.g. Ayesha Khan" />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" placeholder="e.g. 0300-1234567" />
+            </div>
+            <div class="form-group">
+              <label for="fdate">Date & Time</label>
+              <input type="datetime-local" id="fdate" />
+            </div>
+            <div class="form-group">
+              <label for="fguests">Number of Guests</label>
+              <input type="number" id="fguests" placeholder="e.g. 4" min="1" max="20" />
+            </div>
+            <button class="btn-primary full-width" onclick="handleReservation()">
+              Book My Table
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">🔥 Spice & Flame</p>
+      <p class="footer-text">Crafting memorable meals since 2024 · Lahore, Pakistan</p>
+      <p class="footer-copy">© 2026 Spice & Flame. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
